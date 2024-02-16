@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">    
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Titan+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>IceCream</title>
+        </head>
+<body>
+    <!--About Section-->
+    <section class="about-section">
+        
+            <p class="about-title-small">tradition and love</p>
+            <h2 class="about-title-big">how it's made?</h2>
+        
+        <div class="about-group">
+
+            <img 
+            srcset="./images/milk-and-cow.png 1x, ./images/milk-and-cow@2x.png 2x"
+            src="./images/milk-and-cow.png" alt="Milk and Cow" class="about-image rotateIn">
+            <div class="about-items">
+            <p class="about-first-paragraph">Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts.</p>
+            <p class="about-second-paragraph">We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p>
+            <button type="button" class="about-button" data-modal-open>Read more ></button>
+            </div>
+        </div>
+    </section>
+    <!--Advantages Section-->
+    <section class="advantages-section">
+        <div class="advantages-div">
+            <h2 class="visually-hidden">Advantages</h2>
+        <ul class="list advantages-parent">
+            <li class="advantages-item rotateIn">
+            <div class="advantages-images">
+                <img 
+                
+                src="./images/milk-bucket.png" alt="Udder and Bucket" width="50" height="50" class="advantages-svg">
+            </div>
+                <h3 class="advantages-numbers">721</h3>
+                <p class="advantage-paragraph">At 721 Cow, we're passionate about producing the highest quality ice cream possible.</p>
+            </li>
+        </ul>
+        <ul class="list advantages-parent">
+            <li class="advantages-item middle-item rotateIn">
+            <div class="advantages-images">
+                <img src="./images/apples-bucket.png" alt="Apples in the bucket" width="50" height="50" class="advantages-svg">
+            </div>
+                <h3 class="advantages-numbers">16kg</h3>
+                <p class="advantage-paragraph middle-paragraph">You can be sure you're getting a scoop of the freshest ice cream around.</p>
+            </li>
+        </ul>
+        <ul class="list advantages-parent">
+            <li class="advantages-item rotateIn">
+            <div class="advantages-images">
+                <img src="./images/heart-icecream.png" alt="Heart Shapped Icecream" width="44" height="50" class="advantages-svg">
+            </div>
+                <h3 class="advantages-numbers">84</h3>
+                <p class="advantage-paragraph">We use only the freshest, locally-sourced ingredients to make our 84 unique and delicious flavors.</p>
+            </li>
+        </ul>
+        </div>
+    </section>
+        <!--Modal Window-->
+    <div data-modal class="open-button is-hidden">
+        <div class="modal">
+            <div class="modal-div"> 
+            <button type="button" data-modal-close class="close-button">x
+               <!--<svg width="8"  height="8" class="circle-image">
+                    <use href="./images/icons.svg#icon-close-b">
+                     </use>
+                </svg>--> 
+            </button>
+        </div>
+            <p class="modal-paragraph">Our Handmade Icecream</p>
+           
+            <form>
+                <div class="modal-products">
+                    <ul class="list products-list">
+                        <li class="products-label">
+                            <img src="./images/burbon-icecream.png" alt="Icecream Cone" width="80" height="80">
+                            <label for="products">
+                                <p>Start with a classic crème anglaise base for homemade churned ice cream, paired with brown sugar to complement the bourbon flavoring.</p>
+                                <input type="text" name="products" id="products" placeholder="I love it" class="how-many">
+                            </label>
+                        </li>
+                        <li class="products-label">
+                            <img src="./images/butter-pecan -icecream.png" alt="Butter Pecan Icecream" width="80" height="80">
+                            <label for="products">
+                                <p>The combination of heavy cream, light brown sugar, butter, and toasted pecans create an ultra-decadent dessert.</p>
+                                <input type="text" name="products" id="products" placeholder="I love it" class="how-many">
+                            </label>
+                        </li>
+
+                        <li class="products-label">
+                            <img src="./images/pinapple-icecream.png" alt="Pinapple Icecream" width="80" height="80">
+                            <label for="products">
+                                <p>Fresh seasonal fruit helps bring this tropical treat to life. Enjoy it on its own or served on top of a buttery pound cake for a light, bright, fruity dessert</p>
+                                <input type="text" name="products" id="products" placeholder="I love it" class="how-many">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <!--I don`t use it-->
+                 <div class="container-flex"> 
+                <div class="label-comment">
+                    <label class="label-name" for="user-comment"></label>
+                    <textarea name="user-comment" id="user-comment" placeholder="Text input" class="input-user-name">Choose your favourite Icecream or leave sugestions</textarea>
+                </div>
+                <button type="button" class="send-button">I want that!</button>
+            </div>
+            </form> 
+
+        </div>   
+    </div>
+    <script src="./js/modal.js"></script>
+
+</body>
+</html>
